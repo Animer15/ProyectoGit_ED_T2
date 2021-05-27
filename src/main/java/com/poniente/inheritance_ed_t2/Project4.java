@@ -21,7 +21,8 @@ public class Project4 {
             Point pt2 = new Point(5, 8);
             Point pt3;
             Point pt4 = new Point();
-            
+            Point pt5 = new Point();
+                        
             
 
             Triangle triangle_1 = new Triangle(pt1, pt2, new Point(10, 4));
