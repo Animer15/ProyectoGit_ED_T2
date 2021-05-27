@@ -7,12 +7,12 @@ package com.poniente.inheritance_ed_t2;
  * @version 1 Date: 04/27/2014
  */
 
-abstract  class TwoDimensionalShape extends Shape{
+public  class TwoDimensionalShape extends Shape{
     
   
    /**
      * Este método obtiene el perímetro.
-     * @devuelve el valor 0.
+     * @return el valor 0.
      */ 
    public double getPerimeter()
    {
@@ -21,7 +21,7 @@ abstract  class TwoDimensionalShape extends Shape{
     
    /**
      * Este método obtiene el área.
-     * @devuelve el valor 0.
+     * @return el valor 0.
      */
    public double getArea()
    {

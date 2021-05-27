@@ -10,7 +10,7 @@ import java.io.PrintWriter;
  * 
  */
 
- class Cone extends ThreeDimensionalShape{
+public class Cone extends ThreeDimensionalShape{
     //instancia variable de radio y altura.
     double radius;
     double height;
@@ -22,6 +22,8 @@ import java.io.PrintWriter;
     
     /**
      * El constructor que toma radio y altura como parametros.
+     * @param radius tipo double.
+     * @param height tipo double.
      */
     public Cone(double radius, double height) 
     {
@@ -32,9 +34,9 @@ import java.io.PrintWriter;
     
     /**
      * Este constructor toma un objeto Cone como parámetro.
-     * Crea un nuevo objeto Cone.  
-    
+     * Crea un nuevo objeto Cone.    
      * El constructor que llama al constructor definido anteriormente.
+     * @param con tipo Cone.
      */ 
     public Cone(Cone con)
     {
@@ -46,7 +48,7 @@ import java.io.PrintWriter;
   
     /**
      * Obtiene el valor del radio.
-     * @devuelve el valor de radio.
+     * @return el valor de radio.
      */
     public double getRadius() 
     {
@@ -57,6 +59,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor del radio
+     * @param radius tipo double.
      */
     public void setRadius(double radius) 
     {
@@ -67,7 +70,7 @@ import java.io.PrintWriter;
     
     /**
      * Obtiene el valor de la altura.
-     * @devuelve el valor de la altura.
+     * @return el valor de la altura.
      */
     public double getHeight() 
     {
@@ -78,6 +81,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de la altura.
+     * @param height tipo double.
      */
     public void setHeight(double height) 
     {
@@ -88,6 +92,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es un método heredado que obtiene la superficie.
+     * @return valor calculada
      */
     @Override
     public double getSurfaceArea() 
@@ -99,6 +104,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es un método heredado que obtiene el volumen.
+     * @return valor calculada
      */
     @Override
     public double getVolume() 

@@ -9,7 +9,7 @@ import java.io.PrintWriter;
  * @version 1 Date: 04/27/2014
  */
 
-class Cylinder extends ThreeDimensionalShape{
+public class Cylinder extends ThreeDimensionalShape{
     //instancia variable radio y altura de tipo double.
     double radius , height;
     
@@ -22,6 +22,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Este es un constructor que toma radio y altura.
+     * @param radius tipo double.
+     * @param height tipo double.
      */
     public Cylinder(double radius, double height) 
     {
@@ -34,6 +36,7 @@ class Cylinder extends ThreeDimensionalShape{
     /**
     * Este constructor toma un objeto Cylinder como parámetro.
     * Crea un nuevo objeto Cylinder. 
+    * @param cyl tipo Cylinder.
     */
     public Cylinder(Cylinder cyl)
     {
@@ -44,7 +47,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Obtiene el valor del radio.
-     * @devuelve el valor de radio.
+     * @return el valor de radio.
      */
     public double getRadius() 
     {
@@ -54,6 +57,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Establece el valor del radio.
+     * @param radius tipo double.
      */
     public void setRadius(double radius) 
     {
@@ -63,7 +67,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Obtiene el valor de la altura.
-     * @devuelve el valor de la altura.
+     * @return el valor de la altura.
      */
     public double getHeight() 
     {
@@ -73,6 +77,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Establece el valor de la altura.
+     * @param height tipo double.
      */
     public void setHeight(double height) 
     {
@@ -106,7 +111,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     
     /**
-     *  Este es un método heredado que imprime el objeto Cylinder.
+     * Este es un método heredado que imprime el objeto Cylinder.
+     * @param out tipo PrintWriter.
      */
     @Override
     public void print(PrintWriter out) 

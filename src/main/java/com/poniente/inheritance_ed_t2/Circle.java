@@ -1,6 +1,6 @@
 package com.poniente.inheritance_ed_t2;
-
 import java.io.PrintWriter;
+
 /**
  * Esta es una clase círculo que representa el radio y el centro del círculo.
  * hereda de la clase TwoDimensionalShape.
@@ -17,8 +17,10 @@ public class Circle  extends TwoDimensionalShape{
 
     /**
      * El constructor que toma double y punto inicializa el radio y el centro.
+     * @param center Primer parametro de tipo Clase Point
+     * @param radius segundo parametro de tipo double
      */
-    public Circle( Point center,double radius) 
+    public Circle( Point center, double radius) 
     {
         this.radius = radius;
         this.center = center;
@@ -27,6 +29,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * El constructor que llama al constructor definido anteriormente.
+     * @param circle tipo clase Circle
      */
     public Circle(Circle circle)
     {
@@ -37,7 +40,8 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      *Obtiene el valor del radio.
-     * @devuelve el valor de radio.
+     * 
+     * @return valor
      */
     public double getRadius() 
     {
@@ -48,6 +52,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Establece el valor del radio.
+     * @param radius tipo double
      */
     public void setRadius(double radius) 
     {
@@ -57,7 +62,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Obtiene el valor del centro.
-     * @devuelve el valor del centro.
+     * @return info center.
      */
     public Point getCenter() 
     {
@@ -68,6 +73,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Establece el valor del centro.
+     * @param center tipo Clase Point.
      */
     public void setCenter(Point center) 
     {
@@ -78,8 +84,10 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Este es un método heredado que imprime el objeto circular.
+     * @param out Escribir fichero.
      */
     @Override
+    @SuppressWarnings("empty-statement")
     public void print(PrintWriter out) 
     {
         super.print(out);
@@ -94,6 +102,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Este es un método heredado que obtiene el zona.
+     * @return  calculo area.
      */
     @Override
     public double getArea() 
@@ -104,6 +113,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Este es un método heredado que obtiene el Perímetro.
+     * @return  calculo perimetro.
      */
     @Override
     public double getPerimeter() {

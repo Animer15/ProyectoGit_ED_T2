@@ -9,7 +9,7 @@ import java.io.PrintWriter;
  * @version 1  Date: 04/27/2014
  */
 
- class Cube extends ThreeDimensionalShape{
+public class Cube extends ThreeDimensionalShape{
     //instancia de longitud variable que es doble.
      double length;
 
@@ -19,6 +19,7 @@ import java.io.PrintWriter;
     
     /**
      * El constructor que define una longitud de tipo double.
+     * @param length tipo double.
      */
     public Cube(double length) 
     {
@@ -29,6 +30,7 @@ import java.io.PrintWriter;
     /**
      * Este constructor toma un objeto Cube como parámetro.
      * Crea un nuevo objeto Cube.  
+     * @param cube tipo Cube.
      */
     public Cube(Cube cube)
     {
@@ -38,7 +40,7 @@ import java.io.PrintWriter;
    
     /**
      *Obtiene el valor de la longitud.
-     * @devuelve el valor de la longitud.
+     * @return el valor de la longitud.
      */
     public double getLength() 
     {
@@ -48,6 +50,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de la longitud.
+     * @param length tipo double.
      */
     public void setSideLength(double length) 
     {
@@ -58,6 +61,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es un método heredado que obtiene la superficie.
+     * @return valor calculada
      */
     @Override
     public double getSurfaceArea() 
@@ -69,6 +73,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es un método heredado que obtiene el volumen.
+     * @return valor calculada
      */
     @Override
     public double getVolume() 
@@ -78,7 +83,8 @@ import java.io.PrintWriter;
 
     
     /**
-     *  Este es un método heredado que imprime el objeto Cube.
+     * Este es un método heredado que imprime el objeto Cube.
+     * @param out tipo PrintWriter.
      */
     @Override
     public void print(PrintWriter out) 

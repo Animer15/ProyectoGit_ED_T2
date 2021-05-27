@@ -8,7 +8,7 @@ import java.io.PrintWriter;
  * @version 1   Date: 04/27/2014
  */
 
- class Rectangle  extends TwoDimensionalShape{
+public class Rectangle  extends TwoDimensionalShape{
 
      //Variables de instancia largo y ancho. ambos son dobles.
      double length;  
@@ -20,6 +20,8 @@ import java.io.PrintWriter;
     
     /**
      * Este constructor toma dos dobles e inicializa la longitud y el ancho.
+     * @param length tipo double
+     * @param width tipo double
      */
     public Rectangle(double length, double width)
     {
@@ -30,6 +32,7 @@ import java.io.PrintWriter;
      
     /**
      * Este constructor llama al constructor definido anteriormente.
+     * @param rect tipo Rectangle
      */
     public Rectangle(Rectangle rect)
     {
@@ -40,7 +43,7 @@ import java.io.PrintWriter;
     
     /**
      * Obtiene el valor de la longitud.
-     * @devuelve el valor de la longitud.
+     * @return el valor de la longitud.
      */
     public double getLength() 
     {
@@ -51,6 +54,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de la altura.
+     * @param length tipo double
      */
     public void setHeight(double length) 
     {
@@ -61,7 +65,7 @@ import java.io.PrintWriter;
 
     /**
      * Obtiene el valor del ancho.
-     * @devuelve el valor de ancho.
+     * @return el valor de ancho.
      */
     public double getWidth() 
     {
@@ -71,6 +75,8 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de ancho.
+     * @param width tipo double
+     * 
      */
     public void setWidth(double width) 
     {
@@ -81,6 +87,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es un método heredado que imprime el objeto Rectangle.
+     * @param out tipo PrintWriter
      */
     @Override
     public void print(PrintWriter out) 
@@ -120,6 +127,7 @@ import java.io.PrintWriter;
     
     /**
      * Este es el método isSquare que devuelve un valor verdadero o falso de acuerdo con la longitud y el ancho.
+     * @return valor boolean
      */
     public boolean  isSquare()
     {

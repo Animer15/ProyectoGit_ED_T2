@@ -19,6 +19,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * El constructor define el radio.
+     * @param radius tipo double
      */
     public Sphere(double radius) 
     {
@@ -28,6 +29,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * El constructor que llama al constructor definido anteriormente.
+     * @param sp tipo Sphere
      */
     public Sphere(Sphere sp)
     {
@@ -37,7 +39,7 @@ public class Sphere extends ThreeDimensionalShape{
     
      /**
      * Obtiene el valor del radio.
-     * @devuelve el valor de radio.
+     * @return el valor de radio.
      */
     public double getRadius() 
     {
@@ -48,6 +50,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Establece el valor del radio.
+     * @param radius tipo double.
      */
     public void setRadius(double radius) 
     {
@@ -57,6 +60,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Este es un método heredado que obtiene el área de la superficie.
+     * @return valor calculada
      */
     @Override
     public double getSurfaceArea() 
@@ -69,6 +73,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Este es un método heredado que obtiene el volumen.
+     * @return valor calculado
      */
     @Override
     public double getVolume() 
@@ -79,6 +84,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Este es un método heredado que imprime el objeto Esfera.
+     * @param out Escribir sobre fichero
      */
     @Override
     public void print(PrintWriter out)
