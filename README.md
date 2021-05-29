@@ -34,6 +34,7 @@ GitHub es conocido por su comunidad abierta y como contribuyen todos los usuario
 5.  Abre una `"pull request"`, esto hará que todos puedan ver los cambios que propones y aprobarlos en caso de querer llevarlos a la rama principal
 ---
 Este proyecto es una version en español de el usuario Patrik Patel en GitHub
+---
 
 ### Instricciones Git y GitHub.
 -- Para saber version y rama "Branche".
@@ -43,7 +44,8 @@ Este proyecto es una version en español de el usuario Patrik Patel en GitHub
 4. git branch -d 'derivado' o git br -d // Susponder la rama.
 5. git branch // Para saber en que rama estoy.
 6. git checkout nombre_de_mi_rama // Para saber mi posicion en mi rama. 
-	
+---
+
 -- Para identificar a Git:
 01. git config --global user.name "Animer15" // Mi nombre.
 02. git config --global user.email "coreo@....." // Coreo electronico.
@@ -55,13 +57,14 @@ Este proyecto es una version en español de el usuario Patrik Patel en GitHub
 08. git log // listar todos las commits.
 09. git diff // Saber cambios entre mi 1er y 2d version.
 10. git diff master..deriver // Saber cambios realizar entre mi 1er y 2 version dentro las dos ramas.
+---
 
 Para eleminar parametros personal del usuario:
 1. git config --global --unset user.name
 2. git config --global --unset user.email
 -- Eleminar todo una vez:
 3. git config --global --unset-all
-
+---
 
 Para trabajar a Github:
 1. git remote -v // Comprobar si tenemos una Remote.
@@ -71,4 +74,4 @@ Para trabajar a Github:
 	// master: El nombre de mi rama.
 4. git pull origin master // Para recuperar mi trabajo en local.
 5. git fetch // Para recuperar trabajo de otra persona.
-
+---
